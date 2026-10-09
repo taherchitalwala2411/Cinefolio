@@ -1,0 +1,92 @@
+[
+  {
+    "key": "hero",
+    "filename": "/images/hero-hollywood.jpg",
+    "sizeBytes": 864222,
+    "sizeKB": "844.0 KB",
+    "alt": "The illuminated entrance and facade of Grauman's Chinese Theatre at night on Hollywood Boulevard",
+    "credit": "Photograph by Kent Kanouse via Wikimedia Commons (CC BY 2.0)",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Entrance_of_Grauman%27s_Chinese_Theatre_at_night_in_June_2016_(27013908763).jpg"
+  },
+  {
+    "key": "game-of-thrones",
+    "filename": "/images/game-of-thrones.jpg",
+    "sizeBytes": 535829,
+    "sizeKB": "523.3 KB",
+    "alt": "The Iron Throne from HBO's Game of Thrones exhibited at New York Comic Con",
+    "credit": "Photograph by Vincent Desjardins via Wikimedia Commons (CC BY 2.0)",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:NYCC_2016_-_Iron_Throne_(30227897815).jpg"
+  },
+  {
+    "key": "stranger-things",
+    "filename": "/images/stranger-things.jpg",
+    "sizeBytes": 141530,
+    "sizeKB": "138.2 KB",
+    "alt": "The cast of Stranger Things appearing at the San Diego Comic-Con Hall H panel",
+    "credit": "Photograph by Gage Skidmore via Wikimedia Commons (CC BY-SA 2.0)",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:SDCC2017_-_Stranger_Things_Panel_(2)_(36109149896).jpg"
+  },
+  {
+    "key": "the-dark-knight",
+    "filename": "/images/the-dark-knight.jpg",
+    "sizeBytes": 260304,
+    "sizeKB": "254.2 KB",
+    "alt": "The Tumbler Batmobile vehicle built for Christopher Nolan's The Dark Knight",
+    "credit": "Photograph by Ank Kumar via Wikimedia Commons (CC BY-SA 4.0)",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tumbler_Batmobile_( Ank_Kumar,_Infosys_Limited)_04.jpg"
+  },
+  {
+    "key": "breaking-bad",
+    "filename": "/images/breaking-bad.jpg",
+    "sizeBytes": 198699,
+    "sizeKB": "194.0 KB",
+    "alt": "Bryan Cranston and Aaron Paul discussing Walter White and Jesse Pinkman at San Diego Comic-Con",
+    "credit": "Photograph by Gage Skidmore via Wikimedia Commons (CC BY-SA 2.0)",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bryan_Cranston_%26_Aaron_Paul_(9365312370).jpg"
+  },
+  {
+    "key": "lord-of-the-rings",
+    "filename": "/images/lord-of-the-rings.jpg",
+    "sizeBytes": 719032,
+    "sizeKB": "702.2 KB",
+    "alt": "Authentic Hobbit hole set preserved in Matamata, New Zealand from The Lord of the Rings trilogy",
+    "credit": "Photograph by pseudopanax via Wikimedia Commons (CC BY-SA 2.0)",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Detail_outside_a_Hobbit_Hole,_Hobbiton_Movie_Set,_Matamata,_New_Zealand_2016_(50797432077).jpg"
+  },
+  {
+    "key": "titanic",
+    "filename": "/images/titanic.jpg",
+    "sizeBytes": 267009,
+    "sizeKB": "260.8 KB",
+    "alt": "Historical photograph of RMS Titanic departing Southampton in April 1912, the historical basis for James Cameron's film",
+    "credit": "Historic photograph, Public Domain via Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:RMS_Titanic_3.jpg"
+  },
+  {
+    "key": "friends",
+    "filename": "/images/friends.jpg",
+    "sizeBytes": 610747,
+    "sizeKB": "596.4 KB",
+    "alt": "The iconic Central Perk orange couch and coffee shop set at Warner Bros. Studios",
+    "credit": "Photograph, Public Domain via Wikimedia Commons",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Friends_Central_Perk_couch.jpg"
+  },
+  {
+    "key": "jurassic-park",
+    "filename": "/images/jurassic-park.jpg",
+    "sizeBytes": 472404,
+    "sizeKB": "461.3 KB",
+    "alt": "The original Jurassic Park Tour Jeep #18 and Velociraptor enclosure display at Universal Studios Hollywood",
+    "credit": "Photograph by Gary Minnaert via Wikimedia Commons (CC BY 4.0)",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Universal_Studios_Hollywood_(55239200551).jpg"
+  },
+  {
+    "key": "shawshank-redemption",
+    "filename": "/images/shawshank-redemption.jpg",
+    "sizeBytes": 676110,
+    "sizeKB": "660.3 KB",
+    "alt": "The Ohio State Reformatory in Mansfield, Ohio, principal filming location for Shawshank State Penitentiary",
+    "credit": "Photograph by Becker0804 via Wikimedia Commons (CC BY-SA 4.0)",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ohio_State_Reformatory_Mansfield_03.jpg"
+  }
+]

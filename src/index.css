@@ -1,0 +1,217 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cinzel', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  --color-gold: #C5A059;
+  --color-gold-light: #DFBA73;
+}
+
+html.dark {
+  --bg-main: #0B0C10;
+  --bg-surface: #12141C;
+  --bg-surface-elevated: #181B26;
+  --bg-card: #141622;
+  --bg-strip: #0E1017;
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-card: rgba(255, 255, 255, 0.07);
+  --text-main: #E2E4E9;
+  --text-primary: #F3F4F6;
+  --text-heading: #F9FAFB;
+  --text-muted: #9CA3AF;
+  --text-dim: #6B7280;
+  --gold-accent: #C5A059;
+  --gold-bright: #DFBA73;
+  --blockquote-bg: rgba(197, 160, 89, 0.05);
+}
+
+html.light {
+  --bg-main: #FAF8F5;
+  --bg-surface: #FFFFFF;
+  --bg-surface-elevated: #EDE8DE;
+  --bg-card: #FFFFFF;
+  --bg-strip: #F3EFE9;
+  --border-subtle: rgba(0, 0, 0, 0.08);
+  --border-card: rgba(0, 0, 0, 0.07);
+  --text-main: #27272A;
+  --text-primary: #18181B;
+  --text-heading: #09090B;
+  --text-muted: #52525B;
+  --text-dim: #71717A;
+  --gold-accent: #9B7829;
+  --gold-bright: #825E18;
+  --blockquote-bg: rgba(155, 120, 41, 0.07);
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-main, #0B0C10);
+  color: var(--text-main, #E2E4E9);
+  overflow-x: hidden;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+h1, h2, h3, .font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-main, #0B0C10);
+}
+::-webkit-scrollbar-thumb {
+  background: #232736;
+  border-radius: 4px;
+}
+html.light ::-webkit-scrollbar-thumb {
+  background: #D4D4D8;
+}
+
+/* Article prose styles */
+.prose-editorial p {
+  margin-bottom: 1.5rem;
+  line-height: 1.85;
+  color: var(--text-main, #D1D5DB);
+  font-size: 1.0625rem;
+  letter-spacing: -0.01em;
+}
+
+.prose-editorial h2 {
+  font-family: var(--font-serif);
+  color: var(--text-heading, #F3F4F6);
+  font-size: 1.625rem;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-top: 3rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-subtle, rgba(255, 255, 255, 0.08));
+  letter-spacing: 0.02em;
+}
+
+.prose-editorial h3 {
+  font-family: var(--font-serif);
+  color: var(--gold-bright, #DFBA73);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-top: 2.25rem;
+  margin-bottom: 0.875rem;
+  letter-spacing: 0.03em;
+}
+
+.prose-editorial blockquote {
+  margin: 2.25rem 0;
+  padding: 1.25rem 1.75rem;
+  background-color: var(--blockquote-bg, rgba(197, 160, 89, 0.05));
+  border-left: 2px solid var(--gold-accent, #C5A059);
+  font-style: italic;
+  color: var(--text-primary, #E5E7EB);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.prose-editorial ul, .prose-editorial ol {
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+  color: var(--text-main, #D1D5DB);
+  line-height: 1.75;
+}
+
+.prose-editorial li {
+  margin-bottom: 0.625rem;
+}
+
+/* Comprehensive light mode adaptation rules */
+html.light body {
+  background-color: #FAF8F5 !important;
+  color: #27272A !important;
+}
+
+html.light .bg-\[\#0B0C10\],
+html.light .bg-\[\#090A0D\],
+html.light .bg-\[\#0C0E14\] {
+  background-color: #FAF8F5 !important;
+}
+
+html.light .bg-\[\#0E1017\],
+html.light .bg-\[\#141722\] {
+  background-color: #F3EFE9 !important;
+}
+
+html.light .bg-\[\#12141C\],
+html.light .bg-\[\#141622\],
+html.light .bg-\[\#161824\],
+html.light .bg-\[\#151722\] {
+  background-color: #FFFFFF !important;
+}
+
+html.light .bg-\[\#181B26\],
+html.light .bg-\[\#1A1D2A\],
+html.light .bg-\[\#1C2030\],
+html.light .bg-\[\#202434\] {
+  background-color: #EDE8DE !important;
+}
+
+html.light .bg-\[\#1C1812\] {
+  background-color: #FBF4E2 !important;
+}
+
+html.light header {
+  background-color: rgba(250, 248, 245, 0.95) !important;
+}
+
+html.light header.border-b {
+  border-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Light mode text adaptation */
+html.light .text-\[\#F9FAFB\],
+html.light .text-\[\#F3F4F6\],
+html.light .text-slate-100 {
+  color: #121316 !important;
+}
+
+html.light .text-\[\#E5E7EB\],
+html.light .text-\[\#E2E4E9\],
+html.light .text-\[\#D1D5DB\] {
+  color: #27272A !important;
+}
+
+html.light .text-\[\#9CA3AF\],
+html.light .text-\[\#8E95A5\] {
+  color: #52525B !important;
+}
+
+html.light .text-\[\#6B7280\] {
+  color: #71717A !important;
+}
+
+html.light .text-\[\#DFBA73\] {
+  color: #8C6615 !important;
+}
+
+html.light .text-\[\#C5A059\] {
+  color: #9B7829 !important;
+}
+
+/* Light mode border adaptation */
+html.light .border-\[rgba\(255\,255\,255\,0\.08\)\],
+html.light .border-\[rgba\(255\,255\,255\,0\.07\)\],
+html.light .border-\[rgba\(255\,255\,255\,0\.06\)\],
+html.light .border-\[rgba\(255\,255\,255\,0\.05\)\],
+html.light .border-\[rgba\(255\,255\,255\,0\.12\)\],
+html.light .border-\[rgba\(255\,255\,255\,0\.09\)\] {
+  border-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+html.light .shadow-2xl,
+html.light .shadow-xl {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.07), 0 8px 10px -6px rgba(0, 0, 0, 0.03) !important;
+}

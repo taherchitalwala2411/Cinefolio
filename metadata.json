@@ -1,0 +1,6 @@
+{
+  "name": "Cinefolio – Hollywood Cinema & Television Journal",
+  "description": "An independent entertainment journal featuring in-depth retrospective essays, character studies, and production analysis on Hollywood's defining films and television series.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
