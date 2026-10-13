@@ -7,6 +7,8 @@ export const lordOfTheRingsArticle: Article = {
   subtitle: 'New Zealand, Weta Workshop, and the Audacious Triumph of Peter Jackson’s Trilogy',
   category: 'Movies',
   description: 'A grand critical celebration of The Fellowship of the Ring, The Two Towers, and The Return of the King, analyzing how Peter Jackson’s back-to-back production conquered Hollywood skepticism and created an immortal cinematic landmark.',
+  seoTitle: 'Lord of the Rings Review: How Middle-earth Made History',
+  seoDescription: 'Discover why The Lord of the Rings ranks among the best movies of all time english: explore Weta craft, Helm’s Deep, and Gollum. Read the full review now!',
   publishedDate: 'March 1, 2025',
   readingTime: '10 min read',
   wordCount: 1929,
@@ -44,7 +46,7 @@ export const lordOfTheRingsArticle: Article = {
       paragraphs: [
         'The Lord of the Rings remains the gold standard of cinematic fantasy because it approached Tolkien’s mythology not as an arbitrary playground for whimsical visual effects, but as an authentic historical documentary of a lost antiquity. Peter Jackson, along with co-writers Fran Walsh and Philippa Boyens, treated the cultures, languages, geography, and architecture of Middle-earth with the earnest reverence of classical historical epics like Lawrence of Arabia and Ben-Hur.',
         'Rather than winking at the audience with ironic modern humor or cynical antiheroes, the films embraced Tolkien’s sincere emotional earnestness. Characters wept openly for fallen comrades, recited ancient elven poetry under moonlit canopies, and pledged sacred oaths without self-conscious hesitation. This total lack of cynicism created an immersive, mythic gravity that enveloped audiences completely.',
-        'Furthermore, the trilogy achieved an exquisite balance between intimate psychological vulnerability and breathtaking geopolitical scale. We cared about the monumental clash of tens of thousands of armored orcs at the Pelennor Fields precisely because we were emotionally tethered to two exhausted, half-starved hobbits dragging their feet through the volcanic ash of Mordor, clutching a piece of stale lembas bread.'
+        'Furthermore, the trilogy achieved an exquisite balance between intimate psychological vulnerability and breathtaking geopolitical scale. We cared about the monumental clash of tens of thousands of armored orcs at the Pelennor Fields precisely because we were emotionally tethered to two exhausted, half-starved hobbits dragging their feet through the volcanic ash of Mordor, clutching a piece of stale lembas bread. Fans who [read our cinema collection](/movies) or [explore our Harry Potter retrospective](/articles/harry-potter) often marvel at this dual-scale storytelling, which earned 17 Oscars recognized in the [Academy of Motion Picture Arts and Sciences official records](https://www.oscars.org/).'
       ,
         'The emotional endurance of the trilogy was also rooted in the poignant depiction of the Elves’ departure from Middle-earth. Throughout the three films, the twilight of the Firstborn—represented by Elrond’s stoic grief and Galadriel’s shimmering visions—reminded the audience that even in ultimate victory against Sauron, an ancient era of magical beauty was irrevocably ending. Middle-earth would inherit peace, but it would be the mundane, fragile peace of mortal men. This underlying sorrow bestowed upon Tolkien’s heroic triumphs an unforgettable bittersweet majesty.']
     },

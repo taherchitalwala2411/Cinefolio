@@ -14,12 +14,12 @@ export function CategoryPage({ category }: CategoryPageProps) {
   const isMovies = category === 'Movies';
 
   const title = isMovies
-    ? 'Hollywood Movies Archive — Critical Film Essays & Retrospectives'
-    : 'Hollywood TV Series Archive — Landmark Serialized Drama Essays';
+    ? 'Best Movies of All Time English: Reviews & Retrospectives'
+    : 'Best Series of All Time English: Television Retrospectives';
 
   const description = isMovies
-    ? 'In-depth critical essays exploring Hollywood’s most influential films, including The Dark Knight, Titanic, The Lord of the Rings, Jurassic Park, Harry Potter, and Shawshank Redemption.'
-    : 'Exhaustive critical studies exploring Hollywood’s defining television and streaming series, including Game of Thrones, Breaking Bad, Stranger Things, and Friends.';
+    ? 'Explore comprehensive English movie reviews on the best movies of all time English, including The Dark Knight, Titanic, The Lord of the Rings, and Jurassic Park.'
+    : 'Exhaustive critical studies exploring the best series of all time English, including Game of Thrones, Breaking Bad, Stranger Things, and Friends.';
 
   const totalWords = articles.reduce((acc, curr) => acc + curr.wordCount, 0);
 
@@ -54,13 +54,13 @@ export function CategoryPage({ category }: CategoryPageProps) {
             </div>
 
             <h1 className="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#F9FAFB] tracking-tight mb-4">
-              {isMovies ? 'Hollywood Movies Archive' : 'Hollywood Television Series'}
+              {isMovies ? 'Best Movies of All Time English' : 'Best Series of All Time English'}
             </h1>
 
             <p className="text-base sm:text-lg text-[#9CA3AF] max-w-2xl leading-relaxed font-light mb-8">
               {isMovies
-                ? 'Comprehensive retrospective essays on the visionary directing, technical breakthroughs, and storytelling accomplishments that defined modern Hollywood cinema.'
-                : 'Long-form critical studies analyzing character transformations, writers’ rooms, and cultural milestones in serialized American television.'}
+                ? 'Comprehensive English movie reviews on the best movies of all time English, analyzing visionary directing, technical breakthroughs, and storytelling accomplishments.'
+                : 'In-depth retrospective studies exploring the best series of all time English, dissecting character transformations, writers’ rooms, and prestige television milestones.'}
             </p>
 
             {/* Department Metric Badges - Unboxed zero-pill text */}

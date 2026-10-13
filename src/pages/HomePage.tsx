@@ -15,8 +15,8 @@ export function HomePage() {
   return (
     <>
       <SEOHead
-        title="Cinefolio — Critical Essays on Hollywood Movies & Television"
-        description="An independent film journal dedicated to in-depth retrospective essays, production analysis, and critical studies of Hollywood's defining films and television series."
+        title="Best Movies of All Time English: Ranked Masterpiece Guide"
+        description="Discover the best movies of all time english alongside the best series of all time english. Read in-depth english movie reviews—explore our definitive guide!"
       />
 
       {/* Hero Section */}
@@ -104,13 +104,13 @@ export function HomePage() {
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
             <div>
               <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-[#C5A059] mb-2">
-                <span>The Canon Archive</span>
+                <span>English Movie Reviews & Canon Archive</span>
               </div>
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#F9FAFB] tracking-tight">
-                All 10 Comprehensive Essays
+                Best Movies of All Time English & Landmark Series
               </h2>
-              <p className="text-sm text-[#9CA3AF] mt-2">
-                Browse our complete collection of exhaustive Hollywood movie and television retrospectives.
+              <p className="text-sm text-[#9CA3AF] mt-2 max-w-2xl leading-relaxed">
+                Browse our complete collection of in-depth English movie reviews and retrospective essays analyzing the best series of all time English.
               </p>
             </div>
 
@@ -125,7 +125,7 @@ export function HomePage() {
                     : 'text-[#9CA3AF] hover:text-[#F3F4F6]'
                 }`}
               >
-                All (10)
+                All Canon (10)
               </button>
               <button
                 onClick={() => setFilter('Movies')}
@@ -137,7 +137,7 @@ export function HomePage() {
                 }`}
               >
                 <Film className="w-3.5 h-3.5" />
-                <span>Movies (6)</span>
+                <span>Best Movies of All Time (6)</span>
               </button>
               <button
                 onClick={() => setFilter('TV Series')}
@@ -149,7 +149,7 @@ export function HomePage() {
                 }`}
               >
                 <Tv className="w-3.5 h-3.5" />
-                <span>TV Series (4)</span>
+                <span>Best Series of All Time English (4)</span>
               </button>
             </div>
           </div>

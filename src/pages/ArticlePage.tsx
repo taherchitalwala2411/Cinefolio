@@ -14,8 +14,63 @@ import {
   Check,
   Film,
   Tv,
-  List
+  List,
+  ExternalLink
 } from 'lucide-react';
+
+function renderRichParagraph(text: string) {
+  const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  if (!linkRegex.test(text)) {
+    return text;
+  }
+  linkRegex.lastIndex = 0;
+  const parts: React.ReactNode[] = [];
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = linkRegex.exec(text)) !== null) {
+    const [fullMatch, anchorText, url] = match;
+    const matchIndex = match.index;
+
+    if (matchIndex > lastIndex) {
+      parts.push(text.substring(lastIndex, matchIndex));
+    }
+
+    const isInternal = url.startsWith('/');
+    if (isInternal) {
+      parts.push(
+        <Link
+          key={`${matchIndex}-${url}`}
+          href={url}
+          className="text-[#DFBA73] hover:text-[#FFF8E7] underline decoration-[#C5A059]/60 hover:decoration-[#DFBA73] underline-offset-4 font-medium transition-colors"
+        >
+          {anchorText}
+        </Link>
+      );
+    } else {
+      parts.push(
+        <a
+          key={`${matchIndex}-${url}`}
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#DFBA73] hover:text-[#FFF8E7] underline decoration-[#C5A059]/60 hover:decoration-[#DFBA73] underline-offset-4 font-medium transition-colors inline-flex items-center gap-0.5"
+        >
+          <span>{anchorText}</span>
+          <ExternalLink className="w-3 h-3 inline-block ml-0.5 opacity-80" aria-hidden="true" />
+        </a>
+      );
+    }
+
+    lastIndex = matchIndex + fullMatch.length;
+  }
+
+  if (lastIndex < text.length) {
+    parts.push(text.substring(lastIndex));
+  }
+
+  return parts;
+}
 
 interface ArticlePageProps {
   article: Article;
@@ -107,8 +162,8 @@ export function ArticlePage({ article }: ArticlePageProps) {
       </div>
 
       <SEOHead
-        title={`${article.title} — Cinefolio`}
-        description={article.description}
+        title={article.seoTitle || `${article.title} — Cinefolio`}
+        description={article.seoDescription || article.description}
         canonicalUrl={`https://cinefolio.org/articles/${article.slug}`}
         type="article"
         article={article}
@@ -384,8 +439,23 @@ export function ArticlePage({ article }: ArticlePageProps) {
                     )}
 
                     {section.paragraphs.map((para, idx) => (
-                      <p key={idx}>{para}</p>
+                      <p key={idx}>{renderRichParagraph(para)}</p>
                     ))}
+
+                    {section.image && (
+                      <figure className="my-8 rounded-xl overflow-hidden border border-[rgba(255,255,255,0.08)] bg-[#12141C]">
+                        <img
+                          src={section.image.src}
+                          alt={section.image.alt}
+                          className="w-full h-auto object-cover"
+                          loading="lazy"
+                        />
+                        <figcaption className="p-3 text-xs text-[#9CA3AF] flex flex-col sm:flex-row justify-between gap-1 border-t border-[rgba(255,255,255,0.06)]">
+                          <span>{section.image.caption}</span>
+                          <span className="text-[#6B7280]">{section.image.credit}</span>
+                        </figcaption>
+                      </figure>
+                    )}
 
                     {section.pullquote && (
                       <blockquote>

@@ -52,7 +52,7 @@ export function Hero() {
             }`}
           >
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Independent Journal of Cinema & Television</span>
+            <span>English Movie Reviews & Screen Arts Journal</span>
           </div>
 
           {/* Hero Headline with text-wrap: balance */}
@@ -61,7 +61,7 @@ export function Hero() {
               isLight ? 'text-[#09090B]' : 'text-[#F9FAFB]'
             }`}
           >
-            Critical Retrospectives on Hollywood’s Defining Masterpieces
+            The Best Movies of All Time English & Landmark Masterpieces
           </h1>
 
           {/* Subtitle Introduction */}
@@ -70,7 +70,7 @@ export function Hero() {
               isLight ? 'text-[#3F3F46]' : 'text-[#D1D5DB]'
             }`}
           >
-            Dedicated exclusively to Hollywood cinema and landmark serialized television. We explore the storytelling, production craft, moral architecture, and cultural impact that shaped modern screen art.
+            Explore the best movies of all time english alongside the best series of all time english. Our in-depth english movie reviews interrogate the screenwriting, practical craft, moral architecture, and cultural impact that shaped modern cinema and prestige television.
           </p>
 
           {/* Direct Category Access & Jump Actions */}
@@ -84,7 +84,7 @@ export function Hero() {
               }`}
             >
               <Film className="w-4 h-4" />
-              <span>Explore Cinema Essays</span>
+              <span>Explore Best Movies of All Time</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
 
@@ -101,7 +101,7 @@ export function Hero() {
                   isLight ? 'text-[#9B7829]' : 'text-[#C5A059]'
                 }`}
               />
-              <span>Television Series Archive</span>
+              <span>Best Series of All Time English</span>
             </Link>
           </div>
 
