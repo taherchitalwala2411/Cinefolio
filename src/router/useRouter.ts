@@ -7,6 +7,7 @@ import {
   ReactNode,
   createElement
 } from 'react';
+import { soundtrackEngine } from '../services/soundtrackEngine.ts';
 
 export type ConnectionSpeed = 'fast' | 'medium' | 'slow' | 'offline';
 
@@ -105,6 +106,10 @@ export function RouterProvider({ children }: { children: ReactNode }) {
   const navigate = useCallback((to: string) => {
     if (typeof window === 'undefined') return;
     if (window.location.pathname === to) return;
+
+    if (to.includes('harry-potter') || to.includes('game-of-thrones') || to.includes('stranger-things')) {
+      soundtrackEngine.primeAudioContext();
+    }
 
     const speed = detectConnectionSpeed();
     setConnectionSpeed(speed);

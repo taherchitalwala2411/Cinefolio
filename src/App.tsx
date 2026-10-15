@@ -11,10 +11,18 @@ import { AboutPage } from './pages/AboutPage.tsx';
 import { getArticleBySlug } from './data/articles/index.ts';
 import { Film, ArrowLeft } from 'lucide-react';
 import { FilmCardLoader } from './components/FilmCardLoader.tsx';
+import { soundtrackEngine } from './services/soundtrackEngine.ts';
 
 function AppContent() {
   const { path } = useRouter();
   const [searchOpen, setSearchOpen] = useState(false);
+
+  // Stop soundtrack when navigating away from article pages
+  useEffect(() => {
+    if (!path.startsWith('/articles/')) {
+      soundtrackEngine.stopTheme();
+    }
+  }, [path]);
 
   // Global keyboard shortcut: Cmd+K or Ctrl+K to open search
   useEffect(() => {

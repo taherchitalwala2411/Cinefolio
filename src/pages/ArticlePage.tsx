@@ -17,6 +17,8 @@ import {
   List,
   ExternalLink
 } from 'lucide-react';
+import { soundtrackEngine, ThemeSlug } from '../services/soundtrackEngine.ts';
+import { SoundtrackPlayer } from '../components/SoundtrackPlayer.tsx';
 
 function renderRichParagraph(text: string) {
   const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
@@ -83,6 +85,20 @@ export function ArticlePage({ article }: ArticlePageProps) {
   const [readingProgress, setReadingProgress] = useState(0);
 
   const related = getRelatedArticles(article.slug, 3);
+
+  // Auto-play the corresponding soundtrack theme on visit
+  useEffect(() => {
+    const slug = article.slug;
+    if (slug === 'harry-potter' || slug === 'game-of-thrones' || slug === 'stranger-things') {
+      soundtrackEngine.playTheme(slug as ThemeSlug);
+    } else {
+      soundtrackEngine.stopTheme();
+    }
+
+    return () => {
+      soundtrackEngine.stopTheme();
+    };
+  }, [article.slug]);
 
   // Track reading completion progress (0% - 100%)
   useEffect(() => {
@@ -517,6 +533,9 @@ export function ArticlePage({ article }: ArticlePageProps) {
           </div>
         </section>
       </article>
+
+      {/* Floating Theme Soundtrack Player */}
+      <SoundtrackPlayer slug={article.slug} />
     </>
   );
 }
